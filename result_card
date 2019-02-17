@@ -1,0 +1,74 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	int eng,urdu,ps,maths,phy,cs,phyp,csp;
+	float Total_Marks,Obtained_Marks,Percentage;
+	//------------------------------------------------------
+	// Marks Input
+	//------------------------------------------------------ 
+	cout<<"\n----------------------------------------";
+	cout<<"\n              Theory                    ";
+	cout<<"\n----------------------------------------";
+	cout<<"\nEnglish Compulsory(100)= ";cin>>eng;
+	cout<<"Urdu Compulsory(100)= ";cin>>urdu;
+	cout<<"Pakistan Studies(50)= ";cin>>ps;
+	cout<<"Mathematics(100)= ";cin>>maths;
+	cout<<"Physics(85)= ";cin>>phy;
+	cout<<"Computer Science(75)= ";cin>>cs;
+	cout<<"\n----------------------------------------";
+	cout<<"\n            Practical                   ";
+	cout<<"\n----------------------------------------";	
+	cout<<"\nPhysics Practical(15)= ";cin>>phyp;
+	cout<<"Computer Science Practical(25)= ";cin>>csp;
+	//------------------------------------------------------
+	// Marks Calculation
+	//------------------------------------------------------
+	Total_Marks=550;
+	Obtained_Marks=eng+urdu+ps+maths+phy+cs+phyp+csp;
+	Percentage=(Obtained_Marks/Total_Marks)*100;
+	//------------------------------------------------------
+	// Output
+	//------------------------------------------------------
+	system("cls");
+	cout<<"\n----------------------------------------";
+	cout<<"\n              Result                    ";
+	cout<<"\n----------------------------------------";	
+	cout<<"\nObtained Marks= "<<Obtained_Marks<<"/550";
+	cout<<"\nPercentage= "<<Percentage<<"%";
+    //-------------------------------------------------------
+	// Grading
+	//-------------------------------------------------------
+	if(Percentage>0 && Percentage<33)	
+	{
+		cout<<"\nGrade= (F) Failed";
+    }
+    if(Percentage>33 && Percentage<39)
+    {
+    	cout<<"\nGrade= (E) Satisfactory";
+	}
+	if(Percentage>40 && Percentage<49)
+	{
+		cout<<"\nGrade= (D) Fair";
+	}
+	if(Percentage>50 && Percentage<59)
+	{
+		cout<<"\nGrade= (C) Good";
+	}
+	if(Percentage>60 && Percentage<69)
+	{
+		cout<<"\nGrade= (B) Very Good";
+	}
+	if(Percentage>70 && Percentage<79)
+	{
+		cout<<"\nGrade= (A) Excellent";
+	}
+	if(Percentage>80 && Percentage<89)
+	{
+		cout<<"\nGrade= (A+) Marvellous";
+	}
+	if(Percentage>90 && Percentage<100)
+	{
+		cout<<"\nGrade= (A1) Outstanding";
+	}
+} 
